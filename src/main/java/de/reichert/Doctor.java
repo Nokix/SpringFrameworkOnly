@@ -6,8 +6,12 @@ import org.springframework.stereotype.Component;
 @Component
 public class Doctor implements Staff{
 
-    @Autowired
     private Nurse nurse;
+
+    @Autowired
+    public Doctor(Nurse nurse) {
+        this.nurse = nurse;
+    }
 
     @Override
     public void assist() {
