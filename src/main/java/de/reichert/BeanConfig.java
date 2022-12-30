@@ -8,7 +8,12 @@ import org.springframework.context.annotation.Configuration;
 public class BeanConfig {
 
     @Bean
-    public Doctor doctor() {
-        return new Doctor();
+    public Doctor doctor(Nurse nurse) {
+        return new Doctor(nurse);
+    }
+
+    @Bean
+    public Nurse nurse() {
+        return new Nurse();
     }
 }
