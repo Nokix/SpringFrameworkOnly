@@ -2,7 +2,7 @@ package de.reichert;
 
 import org.springframework.stereotype.Component;
 
-
+@Component
 public class Nurse implements Staff{
     @Override
     public void assist() {

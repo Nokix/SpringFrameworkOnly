@@ -4,16 +4,10 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
+import java.beans.BeanProperty;
+
 @Configuration
+@ComponentScan
 public class BeanConfig {
 
-    @Bean
-    public Doctor doctor(Nurse nurse) {
-        return new Doctor(nurse);
-    }
-
-    @Bean
-    public Nurse nurse() {
-        return new Nurse();
-    }
 }
