@@ -1,11 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
-       http://www.springframework.org/schema/beans/spring-beans.xsd">
-    <bean id="doctor" class="de.reichert.Doctor">
+       http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
+
+    <context:component-scan base-package="de.reichert"/>
+
+
+    <!--<bean id="doctor" class="de.reichert.Doctor">
         <constructor-arg name="nurse" ref="nurse"/>
         <constructor-arg name="qualification" value="PHD"/>
     </bean>
-    <bean id="nurse" class="de.reichert.Nurse"/>
+    <bean id="nurse" class="de.reichert.Nurse"/> -->
+
 </beans>

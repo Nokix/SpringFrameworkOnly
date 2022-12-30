@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fc563e01-35cb-487a-935b-9484cabcb75e" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/de/reichert/Doctor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/reichert/Doctor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/spring.xml" afterDir="false" />
     </list>
@@ -85,7 +86,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1672403895594</updated>
-      <workItem from="1672403897049" duration="4959000" />
+      <workItem from="1672403897049" duration="6339000" />
     </task>
     <servers />
   </component>
