@@ -1,16 +1,28 @@
 package de.reichert;
 
-public class Doctor {
-    Qualification qualification;
+public class Doctor implements Staff{
+    private String  qualification;
+    private Nurse nurse;
 
-    public Doctor() {
+    public Nurse getNurse() {
+        return nurse;
     }
 
-    public Doctor(Qualification qualification) {
+    public void setNurse(Nurse nurse) {
+        this.nurse = nurse;
+    }
+
+    public String getQualification() {
+        return qualification;
+    }
+
+    public void setQualification(String qualification) {
         this.qualification = qualification;
     }
 
+    @Override
     public void assist() {
-        System.out.println("Doctor is assisting");
+        System.out.println("Doctor is assisting.");
+        nurse.assist();
     }
 }
