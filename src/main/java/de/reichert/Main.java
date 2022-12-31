@@ -2,6 +2,7 @@ package de.reichert;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.stereotype.Component;
@@ -16,6 +17,6 @@ public class Main {
 
         Doctor doctor = applicationContext.getBean(Doctor.class);
         doctor.assist();
-
+        ((ConfigurableApplicationContext) applicationContext).close();
     }
 }
