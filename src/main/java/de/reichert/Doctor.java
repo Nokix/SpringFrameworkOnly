@@ -10,6 +10,10 @@ import org.springframework.stereotype.Component;
 public class Doctor implements Staff{
     private String name;
 
+    @Autowired
+    private Staff handyman;
+    // private Staff staff // Führt zu Fehler
+
     public void setName(String name) {
         this.name = name;
     }
@@ -17,5 +21,6 @@ public class Doctor implements Staff{
     @Override
     public void assist() {
         System.out.println("Doctor "+ name +" is assisting.");
+        handyman.assist();
     }
 }
