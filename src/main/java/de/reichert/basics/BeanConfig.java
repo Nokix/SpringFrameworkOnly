@@ -1,4 +1,4 @@
-package de.reichert;
+package de.reichert.basics;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;

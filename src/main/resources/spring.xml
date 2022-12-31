@@ -8,10 +8,10 @@
     <!--<context:component-scan base-package="de.reichert"/>-->
 
 
-    <!--<bean id="doctor" class="de.reichert.Doctor">
+    <!--<bean id="doctor" class="de.reichert.basics.Doctor">
         <constructor-arg name="nurse" ref="nurse"/>
         <constructor-arg name="qualification" value="PHD"/>
     </bean>
-    <bean id="nurse" class="de.reichert.Nurse"/> -->
+    <bean id="nurse" class="de.reichert.basics.Nurse"/> -->
 
 </beans>
