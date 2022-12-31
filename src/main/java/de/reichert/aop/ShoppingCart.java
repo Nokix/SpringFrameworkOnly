@@ -1,9 +1,7 @@
 package de.reichert.aop;
 
-import org.springframework.context.annotation.ComponentScan;
 import org.springframework.stereotype.Component;
 
-import java.text.DecimalFormat;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -13,13 +11,16 @@ public class ShoppingCart {
     private long itemCount = 0;
     private long price = 0;
 
-    public void addItem(Item item) {
+    @Logged
+    public long addItem(Item item) {
         long amountOfItem = 0;
         if (cart.containsKey(item)) amountOfItem = cart.get(item);
         amountOfItem++;
         cart.put(item, amountOfItem);
+        return amountOfItem;
     }
 
+    @Logged
     public void removeItem(Item item) {
         if (!cart.containsKey(item)) return;
         long amountOfItem = cart.get(item);
