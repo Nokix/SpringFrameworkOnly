@@ -1,21 +1,21 @@
 package de.reichert;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.config.ConfigurableBeanFactory;
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 @Component
+//@Scope(scopeName = ConfigurableBeanFactory.SCOPE_PROTOTYPE)
 public class Doctor implements Staff{
+    private String name;
 
-    private Nurse nurse;
-
-    @Autowired
-    public Doctor(Nurse nurse) {
-        this.nurse = nurse;
+    public void setName(String name) {
+        this.name = name;
     }
 
     @Override
     public void assist() {
-        System.out.println("Doctor is assisting.");
-        nurse.assist();
+        System.out.println("Doctor "+ name +" is assisting.");
     }
 }
