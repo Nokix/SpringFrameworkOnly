@@ -1,2 +1,4 @@
-package de.reichert.aop;public class Cached {
+package de.reichert.aop;
+
+public @interface Cached {
 }

@@ -28,6 +28,9 @@ public class MainAOP {
         shoppingCart.removeItem(item0);
         shoppingCart.checkout();
 
+        Binomial binomial = context.getBean(Binomial.class);
+
+        System.out.println(binomial.nOverK(10, 5));
 
 
     }
